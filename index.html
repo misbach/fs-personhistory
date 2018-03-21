@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Person History</title>
+	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Person History</h1>
+			<p>Enter the person ID</p>
+			<input class="pid" type="text" name="pid" value="KWCJ-RN4">
+			<button class="btn btn-primary getHistory">Get History</button>
+			<a onclick="fs.oauthRedirect()" href="javascript:void(0);" class="btn btn-primary login">Login</a>
+
+			<div class="count"></div>
+			<ul class="changes"></ul>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://unpkg.com/fs-js-lite@latest/dist/FamilySearch.min.js"></script>
+		<script src="logic.js"></script>
+	</body>
+</html>
